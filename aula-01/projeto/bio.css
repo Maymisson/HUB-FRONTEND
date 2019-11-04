@@ -22,6 +22,7 @@ header {
 	font-size: 60px;
 	text-transform: uppercase;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+	background-image: linear-gradient(to bottom, #973c61, #851944);
 }
 
 p {
@@ -45,6 +46,7 @@ p {
 	text-align: center;
 	width: 85%;
 	box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
+	background-image: linear-gradient(to bottom, #000000 , #151616);
 }
 
 main a {
@@ -162,7 +164,7 @@ nav a {
     border-radius: 20px 20px 20px 20px;
 }
 nav a:hover {
-    background-color: rgb(175, 31, 180);
+    background-color: rgb(117, 18, 121);
 }
 .icones-redes-sociais a:hover{
 	text-decoration: none;  
