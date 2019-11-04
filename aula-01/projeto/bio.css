@@ -8,15 +8,20 @@ body {
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
+header {
+	box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    min-height: 90px;
+}
 
 .titulo-principal {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
 	padding: 25px;
-	border-bottom: 10px solid black;
+	border-bottom: 3px solid black;
 	font-size: 60px;
 	text-transform: uppercase;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 p {
@@ -31,29 +36,22 @@ p {
 	box-sizing: border-box;
 	margin: 20px 40px;
 }
-
-.navegacao-site {
-	text-align: center;
-	background-color: #3C1D3D;
-	color: #F2FFFC;
-}
-
 .rodape-pagina {
+	font-family: "Open Sans Condensed", "Arial", sans-serif;
+	font-size: 14px;
 	background-color: #000;
 	color: #F2FFFC;
 	clear: both;
+	text-align: center;
+	width: 85%;
+	box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
 }
 
 main a {
 	color: #851944;
 }
 
-.navegacao-site a {
-	color: inherit;
-	font-family: "Open Sans Condensed", sans-serif;
-}
-
-.citacao-bio, .navegacao-site, .rodape-pagina {
+.citacao-bio, .rodape-pagina {
     padding: 20px;
 }
 
@@ -61,11 +59,6 @@ main a {
 	width: 720px;
 	margin: auto;
 	padding: 30px 0;
-}
-
-.navegacao-site h1 {
-	font-size: 30px;
-	margin-bottom: 25px;
 }
 
 strong {
@@ -100,15 +93,12 @@ em {
 	background-color: #E6E7E8;
 }
 
-nav a {
-	text-transform: lowercase;
-}
-
 .icones-redes-sociais a {
 	width: 40px;
 	height: 40px;
 	display: block;
 	text-indent: -99999px;
+	margin-top: 20px;
 }
 
 .github {
@@ -136,12 +126,58 @@ main {
 	width: 85%;
 }
 
-.minha-foto, .navegacao-site {
+.navegacao-site {
 	float: right;
 	width: 15%;
+	min-height: 100%;
+	position: fixed;
+	margin-left: 85%;
+	text-align: center;
+	background-color: #3C1D3D;
+	color: #F2FFFC;
+	margin-bottom: 1px;
 	box-sizing: border-box;
-	border-left: 10px solid black;
-	border-bottom: 10px solid black;
+	border-left: 3px solid black;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.5)
+}
+.navegacao-site h1 {
+	font-size: 30px;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+.navegacao-site a {
+	color: inherit;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+nav a {
+	text-align: center;
+	text-transform: lowercase;
+	margin-bottom: 1px;
+	text-decoration: none;
+	display: block;
+    text-decoration: none;
+    padding-reight: 20px;
+    color: #333333;
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+}
+nav a:hover {
+    background-color: rgb(175, 31, 180);
+}
+.icones-redes-sociais a:hover{
+	text-decoration: none;  
+	color:rgb(175, 31, 180);; 
+	font-size:150%;
+}
+
+.minha-foto{
+	width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+	border: 0px solid #FFFFFF;
+	margin-top: 15px;
 }
 
 cite {
