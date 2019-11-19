@@ -1,3 +1,6 @@
+header {
+    position: relative;
+}
 .inicio-post{
     color: #000;
     background-color: #FFF;
@@ -6,8 +9,12 @@
 }
 .foto-home {
     height: 200px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
 }
 .subtitulo-principal{
+    text-align: center;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
     font-size: 0.35em;
 }
 .saudacao p {
@@ -126,6 +133,7 @@ main {
 .palavra-home {
     position: absolute;
     font-family: "Shadows Into Light", cursive;
+    font-size: 0.5em;
     font-weight: bold;
     color: #D5447E;
 
