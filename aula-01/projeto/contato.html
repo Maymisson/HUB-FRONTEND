@@ -17,9 +17,9 @@
             <form>
                 <fieldset>
                     <legend>Seus dados</legend>
-                    <label for="nome">Nome completo</label>
+                    <label class="com-icone" for="nome">Nome completo</label>
                     <input id="nome" type="text" name="nome" required autofocus pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
-                    <label for="email">E-mail</label>
+                    <label class="com-icone" for="email">E-mail</label>
                     <input id="email" type="email" name="email" required placeholder="seu@email.com">
                 </fieldset>
                 <fieldset>
@@ -32,13 +32,11 @@
                         <input type="radio" name="assunto" value="Serviço">
                         Serviço
                     </label>
-                    <fieldset>
-                        <input type="radio" name="assunto" value="Outro" id="outro">
-                        <label for="outro">
-                            Outro
-                        </label>
+                    <label>
+                        <input type="radio" name="assunto" value="Outro">
+                        Outro
                         <input type="text" name="outro-assunto">
-                    </fieldset>
+                    </label>
                 </fieldset>
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
