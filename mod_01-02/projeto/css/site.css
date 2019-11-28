@@ -24,7 +24,7 @@ h1 {
     background-color: #851944;
     color: #FFF;
     padding: 2rem;
-    border-bottom: .5rem solid #000;
+    border-bottom: .3rem solid #000;
 }
 
 .subtitulo-texto {
@@ -59,6 +59,7 @@ main p {
     color: inherit;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
     text-transform: lowercase;
+    text-decoration:none;
 }
 
 .navegacao-site a:hover,
@@ -78,7 +79,7 @@ main p {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     background-repeat: no-repeat;
     text-shadow: 1px 1px black;
@@ -115,6 +116,7 @@ em {
     height: 40px;
     display: block;
     text-indent: -99999px;
+    margin-top: 30px;
 }
 
 .github {
@@ -134,27 +136,35 @@ main {
     flex-grow: 1;
 }
 
-.minha-foto,
 .navegacao-site {
-    border-left: .5em solid black;
+    border-left: .2em solid black;
+    border-right: .2em solid black;
+    border-bottom: .2em solid black;
     box-sizing: border-box;
+    box-shadow: 5px 10px 10px 10px rgb(65, 43, 63);
+    border-radius: 0em 0em 2em 2em;
+    margin-bottom: 120px;
 }
 
 .navegacao-site {
-    width: calc(0.9 * 300px);
-    padding-top: calc(300px + 1em);
+    width: calc(0.9 * 250px);
 }
 
 .minha-foto {
-    border-bottom: .5em solid black;
-    position: absolute;
+    border: .1em solid rgb(228, 228, 228);
+    position: relative;
     top: 0;
     right: 0;
-    height: 300px;
+    height: 175px;
+    border-radius: 50%;
 }
 
 .icones-redes-sociais a {
     position: relative;
+}
+
+.icones-redes-sociais a:hover{
+    top:-6px;
 }
 
 .icones-redes-sociais a:hover::after,
@@ -180,4 +190,7 @@ main {
     height: 1em;
     background-color: black;
     transform: translateY(.5em) rotate(45deg);
+}
+.navegacao-fixa {
+    position: fixed;
 }
