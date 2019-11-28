@@ -74,22 +74,18 @@ main p {
 
 .rodape-pagina {
     color: #F2FFFC;
-    padding: 1em;
+    padding: .5em;
     clear: both;
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 50%;
-    box-sizing: border-box;
+    width: 20%;
     background-repeat: no-repeat;
     text-shadow: 1px 1px black;
-    background-image: radial-gradient(ellipse at left bottom,
-        rgba(60, 29, 61, 0.8),
-        rgba(60, 29, 61, 0.8) 65%,
-        black 65%,
-        black 70%,
-        transparent 70%);
-    background-size: 25% 100%;
+    background-image: radial-gradient(ellipse at 50px, 
+    #851944,
+    #851944 65%,
+        transparent 68%);
+    background-size: 180px 100%;
 }
 
 .container {
@@ -167,30 +163,6 @@ main {
     top:-6px;
 }
 
-.icones-redes-sociais a:hover::after,
-.icones-redes-sociais a:focus::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    background: black;
-    color: white;
-    top: 100%;
-    width: 300%;
-    right: 0;
-    text-indent: 0;
-    font-size: .75em;
-}
-
-.icones-redes-sociais a:hover::before,
-.icones-redes-sociais a:focus::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 1em;
-    height: 1em;
-    background-color: black;
-    transform: translateY(.5em) rotate(45deg);
-}
 .navegacao-fixa {
     position: fixed;
 }
