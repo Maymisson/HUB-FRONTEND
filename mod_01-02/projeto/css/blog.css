@@ -5,6 +5,12 @@
     font-size: 1.5em;
     text-align: center;
     background-color: #E6E7E8;
+    box-shadow: 0 10px 10px -5px;
+    border-radius: 0em 2em 0em 2em;
+    text-decoration: none;
+    width: 50%;
+    margin-left: 180px;
+
 }
 
 .post-blog + .post-blog {

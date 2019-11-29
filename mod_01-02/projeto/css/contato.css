@@ -2,6 +2,7 @@ legend,
 label[for="mensagem"] {
     font-weight: bold;
     margin-top: 1em;
+    
 }
 label[for],
 button {
@@ -14,18 +15,25 @@ textarea {
     font-size: 100%;
     padding: .25em .5em;
     width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
+    margin-left: 5px;
 }
 button {
     border: 0;
     padding: .5em 1em;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: 'Sulphur Point', sans-serif;
     background-color: #3C1D3D;
     color: white;
     font-size: 1.2em;
     margin-left: auto;
     margin-top: 1em;
+    box-shadow: 0 10px 10px -5px;
+}
+button:hover{
+    background: rgb(97, 43, 98);
 }
 input:invalid {
     box-shadow: 0 0 3px red;
@@ -45,7 +53,7 @@ input[value="Outro"]:checked + input {
 }
 .com-icone {
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 1.5px;
 }
 .com-icone::after {
     content: '';
@@ -58,6 +66,7 @@ input[value="Outro"]:checked + input {
     background-repeat: no-repeat;
     left: 0;
     top: 100%;
+    border-radius: 50%;
 }
 .com-icone + input {
     width: calc(100% - 2em);

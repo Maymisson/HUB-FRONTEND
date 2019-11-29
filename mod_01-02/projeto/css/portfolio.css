@@ -4,7 +4,7 @@
 }
 .hoverzoom {
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: 9px;
     position: relative;
     width: 350px;
     height: 277px;
@@ -85,7 +85,7 @@
     margin-top: 20px;
     margin-left: 12px;
     position: relative;
-    width: 710px;
+    width: 706px;
     height: 400px;
 }
 .hoverzao .retina p {
@@ -96,4 +96,10 @@
     margin-left: 90px;
     width: 75%; 
     height: 75%;
+}
+.text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150%;
+    text-align: center;
+    color: #3C1D3D;
 }
