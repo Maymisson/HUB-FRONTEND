@@ -6,7 +6,7 @@
     margin-top: 20px;
     margin-left: 9px;
     position: relative;
-    width: 350px;
+    width: 313px;
     height: 277px;
     overflow: hidden;
     box-sizing: border-box;
@@ -85,7 +85,7 @@
     margin-top: 20px;
     margin-left: 12px;
     position: relative;
-    width: 706px;
+    width: 625px;
     height: 400px;
 }
 .hoverzao .retina p {
@@ -98,7 +98,7 @@
     height: 75%;
 }
 .text{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Sulphur Point', sans-serif;
     font-size: 150%;
     text-align: center;
     color: #3C1D3D;
