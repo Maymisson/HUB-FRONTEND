@@ -11,7 +11,7 @@ body {
     color: #99A;
     line-height: 1;
     padding: 2em;
-    margin-left: 342px;
+    margin-left: 202px;
 }
 .saudacao-inicio {
     font-size: 3em;
@@ -105,15 +105,17 @@ body {
 
 /*-------animação das imagens---------*/
 .galeria{
-    width: 725px;
-    height: 400px;
+    margin:0 auto;
     position: relative;
+    width: 625px;
+    height: 400px;
     overflow: hidden;
     box-sizing: border-box;
-    border-radius: 2em 2em 2em 2em;
-    box-shadow: 20px 20px 20px rgba(44, 0, 35, 0.671);
+    border: 0.1em solid rgba(0, 0, 0, 0.671);
+    border-radius: .5em .5em .5em .5em;
+    box-shadow: 0px 1px 35px 16px rgba(0,0,0,0.61);
     display: block;
-    background: #fff;  
+    background: #fff;
 }
 .imagem{
     width: 100%; 
@@ -145,92 +147,6 @@ body {
 .imagem:nth-child(4){
     animation-delay: 15s;
 }
-.galeria2{
-    margin-left:30px;
-    margin-top: 40px;
-    width: 525px;
-    height: 320px;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-    border-radius: 2em 0em 0em 2em;
-    box-shadow: 20px 20px 20px rgba(44, 0, 35, 0.671);
-    display: block;
-    background: #fff;  
-}
-.imagem2{
-    width: 520px; 
-    height: 300px;
-    position: absolute;
-    opacity: 0;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-@keyframes animacao{
-    25%{
-        opacity: 1;
-        transform: scale(1.1,1.1);
-    }
-    50%{
-        opacity: 0;
-    }
-}
-.imagem2:nth-child(4){
-    
-}
-.imagem2:nth-child(3){
-    animation-delay: 5s;
-}
-.imagem2:nth-child(2){
-    animation-delay: 10s;
-}
-.imagem2:nth-child(1){
-    animation-delay: 15s;
-}
-.galeria3{
-    margin-right:30px;
-    margin-top: 40px;
-    width: 525px;
-    height: 320px;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-    border-radius: 0em 2em 2em 0em;
-    box-shadow: 20px 20px 20px rgba(44, 0, 35, 0.671);
-    display: block;
-    background: #fff;  
-}
-.imagem3{
-    width: 520px; 
-    height: 300px;
-    position: absolute;
-    opacity: 0;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-}
-@keyframes animacao{
-    25%{
-        opacity: 1;
-        transform: scale(1.1,1.1);
-    }
-    50%{
-        opacity: 0;
-    }
-}
-.imagem3:nth-child(3){
-    
-}
-.imagem3:nth-child(1){
-    animation-delay: 5s;
-}
-.imagem3:nth-child(4){
-    animation-delay: 10s;
-}
-.imagem3:nth-child(2){
-    animation-delay: 15s;
-}
 /*-----------------------------------*/
 .blog {
     background-color: #999;
@@ -247,7 +163,7 @@ body {
 }
 .blog li {
     width: 30%;
-    margin-left: 100px;
+    margin-left: 30px;
 }
 .blog li a {
     color: #FCF;
@@ -436,7 +352,7 @@ body {
     display:block;
     position:absolute;
     top:148px;
-    margin-left:420px;
+    margin-left:320px;
     padding: 1.5em;
 }
 .hm div {
@@ -452,7 +368,7 @@ body {
     color: rgb(0, 0, 0);
     border-radius:5px;
     box-sizing: border-box;
-    width: 340px;
+    width: 300px;
     background-color: #E6E7E8;
     box-shadow: 0px 10px 10px -5px rgba(44, 0, 35, 0.671);
     text-decoration: none;
