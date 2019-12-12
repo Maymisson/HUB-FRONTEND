@@ -4,19 +4,21 @@ body {
 .foto-home {
     height: 200px;
     border-radius: 50%;
+    border: .1em solid rgb(228, 228, 228);
 }
 .saudacao p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #99A;
     line-height: 1;
     padding: 2em;
+    margin-left: 342px;
 }
 .saudacao-inicio {
     font-size: 3em;
     color: #889;
 }
 .saudacao-ultima-linha {
-    text-align: right;
+    text-align: center;
     display: block;
 }
 .saudacao strong {
@@ -26,8 +28,6 @@ body {
 .saudacao em {
     color: #851944;
     font-size: 4em;
-    -webkit-transform: rotate(-5deg) skew(-10deg);
-            transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
     -webkit-animation: flutua 1s ease-in-out infinite;
             animation: flutua 1s ease-in-out infinite;
@@ -41,16 +41,16 @@ body {
 }
 .botao-index {
     font-size: 1.25em;
-    background-color: #851944;
-    color: #FFF;
     padding: .5em;
-    border: .2em solid black;
     width: 40ch;
     margin: 2em auto;
     display: block;
     text-align: center;
     text-decoration: none;
     transition: .5s;
+    background-color: #E6E7E8;
+    box-shadow: 0 10px 10px -5px;
+    border-radius: 2em 2em 2em 2em;
 }
 .botao-index:focus,
 .botao-index:hover {
