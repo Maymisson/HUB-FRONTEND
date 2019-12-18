@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <h3 class="center-align">CONTATO</h3>
+            <article class="col s6 offset-s3">
+                <form method="POST" action="formulario-contacto.php">
+                    <div class="input-field">
+                        <i class="material-icons prefix">perm_identity</i>
+                        <label for="nombre">Nome</label>
+                        <input type="text" name="nome" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">person_pin</i>
+                        <label for="apellido">Apelido</label>
+                        <input type="text" name="apelido" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <label for="mensaje">Mensagem</label>
+                        <textarea name="mensagem" id="" rows="10" class="materialize-textarea" length="140"
+                            required></textarea>
+                    </div>
+
+                    <p class="center-align">
+                        <button class="waves-effect waves-light btn" type="submit"><i
+                                class="material-icons right">send</i>enviar</button>
+                    </p>
+
+                </form>
+
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer-geral">
+
+        <div class="footer-esquerdo">
+
+            <img src="img/logo-branco.png" alt="logo-branco">
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </p>
+
+        </div>
+
+        <div class="footer-central">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Rua Revolução, 31 - Centro </span> Fortaleza-CE, Brasil</p>
+            </div>
+
+            <div>
+                <i class="telefone"></i>
+                <p>+55 (85) 99999-0000</p>
+            </div>
+
+            <div>
+                <i class="email"></i>
+                <p><a href="contato.html">contato@barbearia.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-direito">
+
+            <p class="footer-sobre">
+                <span>Sobre</span>
+                A Barbearia se tornou sinônimo de estilo e serviços de qualidade que despertam o desejo dos brasileiros 
+                e visitantes de outros países..
+            </p>
+
+            <div class="footer-icones">
+
+                <a href="#"><i class="facebook"></i></a>
+                <a href="#"><i class="twitter"></i></a>
+                <a href="#"><i class="linkedin"></i></a>
+                <a href="#"><i class="github"></i></a>
+
+            </div>
+
+        </div>
+        
+        <hr class="linha">
+        
+        <p class="footer-nome">&copy; Copyright Barbearia - 2019</p>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+</body>
+
+</html>

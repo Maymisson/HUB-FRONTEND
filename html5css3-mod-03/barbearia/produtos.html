@@ -6,56 +6,67 @@
     <title>Produtos - Barbearia</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/produtos.css">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Roboto|Sulphur+Point&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato|Roboto|Sulphur+Point&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <header>
-        <div class="caixa">
-            <h1><img src="img/logo.png" alt="logo"></h1>
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <a href="home.html" id="logo"><img src="img/logo-barber.png" alt="logo"></a>
     </header>
-    <main>
-        <ul class="produtos">
-            <li>
-                <h2>Cabelo</h2>
-                <img src="img/cabelo.jpg" alt="cabelo">
-                <p class="prodtu-descricao">Na tesoura ou Máquina, como o cliente preferir</p>
-                <p class="produto-preco">R$ 25,00</p>
-            </li>
-            <li>
-                <h2>Barba</h2>
-                <img src="img/barba.jpg" alt="barba">
-                <p class="prodtu-descricao">Corte e desenho profissional de Barba</p>
-                <p class="produto-preco">R$ 18,00</p>
-            </li>
-            <li>
-                <h2>Cabelo e Barba</h2>
-                <img src="img/cabelo+barba.jpg" alt="cabelo+barba">
-                <p class="prodtu-descricao">Pacote completo de cabelo e barba</p>
-                <p class="produto-preco">R$ 35,00</p>
-            </li>
-        </ul>
-    </main>
-    <!-- Site footer -->
+
+    <section id="hero1" class="hero">
+        <div class="inner">
+            <div class="copy">
+                <h1>The Barber</h1>
+                <p>Confira os Serviços em Nossa Barbearia e Marque um Horário para Você !</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="inner">
+            <div class="copy2">
+                <h1>Nossos Serviços</h1>
+                <p>Preços imperdíveis, venha conferir! </p>
+                <ul class="produtos">
+                    <li>
+                        <h2>Cabelo</h2>
+                        <img src="img/cabelo.jpg" alt="cabelo">
+                        <p class="prodtu-descricao">Na tesoura ou Máquina, como o cliente preferir</p>
+                        <p class="produto-preco">R$ 25,00</p>
+                    </li>
+                    <li>
+                        <h2>Barba</h2>
+                        <img src="img/barba.jpg" alt="barba">
+                        <p class="prodtu-descricao">Corte e desenho profissional de Barba</p>
+                        <p class="produto-preco">R$ 18,00</p>
+                    </li>
+                    <li>
+                        <h2>Cabelo e Barba</h2>
+                        <img src="img/cabelo+barba.jpg" alt="cabelo+barba">
+                        <p class="prodtu-descricao">Pacote completo de cabelo e barba</p>
+                        <p class="produto-preco">R$ 35,00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <footer class="footer-geral">
 
         <div class="footer-esquerdo">
 
-            <img src="img/logo-branco.png" alt="logo-branco">
+            <img src="img/logo-barber-retina.png" alt="logo-branco">
 
             <p class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
+                <a href="home.html">Home</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="contato.html">Contato</a>
             </p>
 
         </div>
@@ -74,7 +85,7 @@
 
             <div>
                 <i class="email"></i>
-                <p><a href="contato.html">contato@barbearia.com</a></p>
+                <p><a href="contato.html">contato@thebarber.com</a></p>
             </div>
 
         </div>
@@ -83,7 +94,7 @@
 
             <p class="footer-sobre">
                 <span>Sobre</span>
-                A Barbearia se tornou sinônimo de estilo e serviços de qualidade que despertam o desejo dos brasileiros 
+                The Barber se tornou sinônimo de estilo e serviços de qualidade que despertam o desejo dos brasileiros
                 e visitantes de outros países..
             </p>
 
@@ -97,10 +108,10 @@
             </div>
 
         </div>
-        
+
         <hr class="linha">
-        
-        <p class="footer-nome">&copy; Copyright Barbearia - 2019</p>
+
+        <p class="footer-nome">&copy; Copyright The Barber - 2019</p>
 
     </footer>
 </body>

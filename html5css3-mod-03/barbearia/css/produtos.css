@@ -1,16 +1,11 @@
 body {
-    font-family: 'Sulphur Point', sans-serif;
-}
-
-header {
-    background: #bbbbbb;
-    padding: 20px;
+	font-family: 'Roboto Slab', serif;
 }
 
 .caixa {
     position: relative;
     width: 940px;
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 nav {
@@ -33,7 +28,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #C78C19;
+    color: #26a69a;
 }
 
 .produtos {
@@ -55,12 +50,12 @@ nav a:hover {
 }
 
 .produtos li:hover {
-    border-color: #C78C19;
-    box-shadow: inset 0 0 1em #C78C19, 0 0 1em #626770;
+    border-color: #26a69a;
+    box-shadow: inset 0 0 .5em #26a69a, 0 0 1em #626770;
 }
 
 .produtos li:active {
-    border-color: rgb(54, 199, 25);
+    border-color: #C78C19;
 }
 
 .produtos h2 {
@@ -76,182 +71,4 @@ nav a:hover {
 
 .produto-descricao {
     font-size: 18px;
-}
-
-/*----- Site footer -----*/
-footer{
-	position: relative;
-	bottom: 0;
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #626770, rgba(0, 0, 0, 0));
-}
-
-.footer-geral{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-	margin-top: 80px;
-}
- 
-.footer-geral .footer-esquerdo,
-.footer-geral .footer-central,
-.footer-geral .footer-direito{
-	display: inline-block;
-	vertical-align: top;
-}
- 
-.footer-geral .footer-esquerdo{
-	width: 40%;
-}
- 
-.footer-geral img{
-    margin-top: -30px;
-    display: inline-block;
-}
- 
-.footer-geral h3 span{
-	color:  #626770;
-}
- 
- 
-.footer-geral .footer-links{
-    color:  #ffffff;
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px 0 12px;
-	padding: 0;
-}
- 
-.footer-geral .footer-links a{
-    display:block;
-    margin-bottom: 10px;
-    margin-left: 10px;
-	line-height: 1.8;
-	text-decoration: none;
-    color:  inherit;
-}
- 
-.footer-geral .footer-nome{
-	color:  #8f9296;
-	font-size: 12px;
-	font-weight: normal;
-	text-align: center;
-}
- 
- 
-.footer-geral .footer-central{
-	width: 35%;
-}
- 
-.footer-geral .footer-central i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
- 
-.footer-geral .footer-central i.email{
-	font-size: 17px;
-	line-height: 38px;
-}
- 
-.footer-geral .footer-central p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
- 
-.footer-geral .footer-central p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
- 
-.footer-geral .footer-central p a{
-	color:  #626770;
-	text-decoration: none;;
-}
- 
-.footer-geral .footer-direito{
-	width: 20%;
-}
- 
-.footer-geral .footer-sobre{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
- 
-.footer-geral .footer-sobre span{
-	display: block;
-	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
- 
-.footer-geral .footer-icones{
-	margin-top: 25px;
-}
- 
-.footer-geral .footer-icones a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
- 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
- 
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
- 
- 
-@media (max-width: 880px) {
- 
-	.footer-geral{
-		font: bold 14px 'Sulphur Point', sans-serif;
-	
-	}
- 
-	.footer-geral .footer-esquerdo,
-	.footer-geral .footer-central,
-	.footer-geral .footer-direito{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
- 
-	.footer-geral .footer-central i{
-		margin-left: 0;
-	}
-	.main {
-		line-height: normal;
-		font-size: auto;
-	}
- 
 }
