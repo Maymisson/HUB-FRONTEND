@@ -7,11 +7,16 @@
 }
 
 .copy2 p{
-    text-align: left;
+    text-align: justify;
     width: 50%;
     line-height:30px;
     margin: 0 auto;
-    margin-right: 10%;
+    margin-right: 5em;
+}
+
+.copy2 h1{
+    text-align: left;  
+    margin-left: 3%;
 }
 
 .copy2 img{
@@ -30,4 +35,17 @@
     font-weight: bold;
     width: 50%;
     margin-top: 100px;
+}
+
+.content{
+    margin-bottom: 7em;
+}
+
+.bolha{
+    margin-top: -5em;
+}
+
+.bolha h2{
+    text-align: center;
+    margin-left: 15%;
 }
