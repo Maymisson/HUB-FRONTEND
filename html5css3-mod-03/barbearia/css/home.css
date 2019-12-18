@@ -1,27 +1,28 @@
-body {
-    background: #CCCCCC;
-    font-family: 'Sulphur Point', sans-serif;
+.copy2 {
+    position:absolute; 
+    top:2%; 
+    height:10em; 
+    margin-top:-5em; 
+    width:100%;
 }
 
-#banner {
-	width: 100%;
+.copy2 p{
+    text-align: left;
+    width: 50%;
+    line-height:30px;
+    margin: 0 auto;
+    margin-right: 10%;
 }
 
-h1 {
-	text-align: center;
+.copy2 img{
+    float: left;
+    display: inline;
+    width: 8%;
 }
 
-p {
-	text-align: center;
-}
-
-#missao {
-	font-size: 20px;
-}
-
-em strong {
-	color: #FF0000;
-}
-.itens{
-    font-style: italic;
+.cross{
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50%;
+    margin-top: 100px;
 }
