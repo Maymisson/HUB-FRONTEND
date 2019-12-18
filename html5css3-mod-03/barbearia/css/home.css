@@ -19,6 +19,11 @@
     display: inline;
     width: 8%;
 }
+.copy2 iframe{
+    float: left;
+	display: inline;
+	margin-left: 40px;
+}
 
 .cross{
     text-transform: uppercase;
