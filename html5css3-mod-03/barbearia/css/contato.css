@@ -3,5 +3,16 @@ body {
     padding: 0;
 }
 .bloco{
-    margin-top: 5%;
+    margin-top: 10%;
+    width: 100%;
 }
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
