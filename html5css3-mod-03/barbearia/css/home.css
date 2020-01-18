@@ -21,11 +21,11 @@
 }
 
 .copy2 img{
-    float: left;
-    display: inline;
     width: 10%;
+    float: left;
     margin-bottom: 0;
 }
+
 .copy2 iframe{
     float: left;
     width: 40%;
