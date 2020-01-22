@@ -2,6 +2,8 @@ var titulo = document.querySelector("h1");
 //console.log(titulo);
 //console.log(titulo.textContent);
 
+// -- Fazendo um loop para replicação do resultado para cada campo do IMC
+
 var pacientes = document.querySelectorAll(".paciente");
 for (var i = 0; i < 5; i++) {
     //console.log(paciente[i]);
@@ -38,14 +40,6 @@ for (var i = 0; i < 5; i++) {
         tdImc.textContent = "Peso e/ou altura inválidos!";
     }
 }
-
-
-
-
-    // -- Fazendo um loop para replicação do resultado para cada campo do IMC
-
-
-
 
     //console.log(imc);
 
