@@ -35,6 +35,7 @@ for (var i = 0; i < 5; i++) {
 
     if (pesoValidado && alturaValidado) {
         var imc = peso / (altura * altura);
+        //usando limitado (toFixed) decimal para float
         tdImc.textContent = imc.toFixed(2);
     } else {
         tdImc.textContent = "Peso e/ou altura inválidos!";
