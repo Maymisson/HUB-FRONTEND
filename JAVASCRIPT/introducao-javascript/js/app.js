@@ -9,6 +9,7 @@ var pacientes = document.querySelectorAll(".paciente");
 // -- loop for percorrendo o tamanho de uma array (paciente.length)
 for (var i = 0; i < paciente.length; i++) {
 
+    // -- Fazendo com que a variavel percorra um item por vez da array (var = var[i])  
     var paciente = pacientes[i];
 
     
