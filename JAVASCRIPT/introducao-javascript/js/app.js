@@ -102,8 +102,19 @@ botaoAdicionar.addEventListener("click", function (event){
     gorduraTd.textContent = gordura;
     imcTd.textContent = imc;
 
-    //-- passando appendChild para definir filhos
-})
+    // -- passando appendChild para definir filhos
+    pacienteTr.appendChild(nomeTd);
+    pacienteTr.appendChild(pesoTd);
+    pacienteTr.appendChild(alturaTd);
+    pacienteTr.appendChild(gorduraTd);
+    pacienteTr.appendChild(imcTd);
+
+    //console.log(pacienteTr);
+
+    // -- passando o elemento criado no JS para o HTML
+    var tabela = document.querySelector(pacienteTr);
+    tabela.appendChild(pacienteTr); 
+});
     //console.log(paciente); //tr
     //console.log(tdPeso);  //td que tem o peso
     //console.log(peso);  // obter 0 valor
