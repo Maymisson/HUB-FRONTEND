@@ -65,9 +65,13 @@ function mostraMensagem(){
     // -- interação de retorno
     alert("Você clicou no titulo!");
 }
+
+var botaoAdicionar = document.querySelector("#adicionar-paciente")
 // -- Função anonima 
-titulo.addEventListener("click", function (){
-    alert("Você clicou no titulo!");
+botaoAdicionar.addEventListener("click", function (event){
+    // -- metodo que previne o comportamento padrão do evento
+    event.preventDefault();
+    alert("Você clicou em adicionar!");
 })
     //console.log(paciente); //tr
     //console.log(tdPeso);  //td que tem o peso
