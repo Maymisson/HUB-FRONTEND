@@ -59,19 +59,36 @@ for (var i = 0; i < pacientes.length; i++) {
 }
 
 // -- Metodo escutador (tipo evento, nome função)
-titulo.addEventListener("click", mostraMensagem);
+//titulo.addEventListener("click", mostraMensagem);
 // -- Função nomeada
-function mostraMensagem(){
+//function mostraMensagem(){
     // -- interação de retorno
-    alert("Você clicou no titulo!");
-}
+    //alert("Você clicou no titulo!");
+//}
 
 var botaoAdicionar = document.querySelector("#adicionar-paciente")
 // -- Função anonima 
 botaoAdicionar.addEventListener("click", function (event){
     // -- metodo que previne o comportamento padrão do evento
     event.preventDefault();
-    alert("Você clicou em adicionar!");
+  
+    // -- capturando dados de inputs através do querySelector()
+    var form = document.querySelector("#form-add");
+
+    var nome = form.nome.value;
+    var peso = form.peso.value;
+    var altura = form.altura.value;
+    var gordura = form.gordura.value;
+
+    //console.log(nome);
+    //console.log(peso);
+    //console.log(altura);
+    //console.log(gordura);
+
+
+    // -- Criando elemento do HTML dentro do JS
+    var pacienteTr = document.createElement("tr");
+    
 })
     //console.log(paciente); //tr
     //console.log(tdPeso);  //td que tem o peso
