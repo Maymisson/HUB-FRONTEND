@@ -88,7 +88,21 @@ botaoAdicionar.addEventListener("click", function (event){
 
     // -- Criando elemento do HTML dentro do JS
     var pacienteTr = document.createElement("tr");
-    
+
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var imcTd = document.createElement("td");
+
+    // -- Passando o valor extraido do <form.nome.value;>
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+    imcTd.textContent = imc;
+
+    //-- passando appendChild para definir filhos
 })
     //console.log(paciente); //tr
     //console.log(tdPeso);  //td que tem o peso
