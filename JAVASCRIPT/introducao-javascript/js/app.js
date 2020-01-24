@@ -1,5 +1,6 @@
 //-- criando variavel para manipular o elemento que pussui a classe CSS
-var titulo = document.querySelector("h1");
+var titulo = document.querySelector(".titulo");
+titulo.textContent = "TS3 Nutrição";
 
 // -- Fazendo um loop para replicação do resultado para cada campo do IMC --
 
@@ -57,7 +58,17 @@ for (var i = 0; i < pacientes.length; i++) {
     //}
 }
 
-
+// -- Metodo escutador (tipo evento, nome função)
+titulo.addEventListener("click", mostraMensagem);
+// -- Função nomeada
+function mostraMensagem(){
+    // -- interação de retorno
+    alert("Você clicou no titulo!");
+}
+// -- Função anonima 
+titulo.addEventListener("click", function (){
+    alert("Você clicou no titulo!");
+})
     //console.log(paciente); //tr
     //console.log(tdPeso);  //td que tem o peso
     //console.log(peso);  // obter 0 valor
