@@ -32,14 +32,18 @@ for (var i = 0; i < pacientes.length; i++) {
         console.log("Peso inválido"); 
         pesoValidado = false;
         tdImc.textContent = "Peso inválido!"; //-- mensagem individual para peso inválido
-        paciente.style.backgroundColor = "lightcoral";
+        //paciente.style.backgroundColor = "lightcoral";
+        //usando a função classList para melhor manipulação do CSS
+        paciente.classList.add("paciente-invalido");
     }
 
     if (altura <= 0 || altura > 3) {
         console.log("Altura inválida");
         alturaValidado = false;
         tdImc.textContent = "Altura inválida!"; //-- mensagem individual para altura inválido
-        paciente.style.backgroundColor = "lightcoral";
+        //paciente.style.backgroundColor = "lightcoral";
+        //usando a função classList para melhor manipulação do CSS -- .add como metodo de adicionar
+        paciente.classList.add("paciente-invalido");
     }
 
     if (pesoValidado && alturaValidado) {
