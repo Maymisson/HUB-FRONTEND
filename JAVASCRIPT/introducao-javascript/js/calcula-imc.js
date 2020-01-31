@@ -49,9 +49,7 @@ for (var i = 0; i < pacientes.length; i++) {
 
     if (pesoValidado && alturaValidado) {
         //-- criando variavel e realizando calculos
-        var imc = peso / (altura * altura);
-        //usando limitado (toFixed) decimal para float
-        tdImc.textContent = imc.toFixed(2);
+        var imc = calculaImc(peso,altura);
     } //else {
         //tdImc.textContent = "Peso e/ou altura inválidos!"; //-- mensagem para generalizar quando uma das condições forem invalidas
         //paciente.style.backgroundColor = "lightcoral";
@@ -65,3 +63,13 @@ for (var i = 0; i < pacientes.length; i++) {
     // -- interação de retorno
     //alert("Você clicou no titulo!");
 //}
+
+
+//-- criando funções 
+
+function calculaImc (peso,altura){
+    let imc = 0;
+    imc = peso / (altura * altura); 
+     //usando limitado (toFixed) decimal para float
+    return imc.toFixed(2);
+}
