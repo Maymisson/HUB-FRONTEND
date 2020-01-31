@@ -46,22 +46,11 @@ function montaTr(paciente){
     let nomeTd = document.createElement("td");
     nomeTd.classList.add("info-nome");
     nomeTd.textContent = paciente.nome;
-
-    let pesoTd = document.createElement("td");
-    pesoTd.classList.add("info-peso");
-    pesoTd.textContent = paciente.peso;
-
-    let alturaTd = document.createElement("td");
-    alturaTd.classList.add("info-altura");
-    alturaTd.textContent = paciente.altura;
-
-    let gorduraTd = document.createElement("td");
-    gorduraTd.classList.add("info-gordura");
-    gorduraTd.textContent = paciente.gordura;
-
-    let imcTd = document.createElement("td");
-    imcTd.classList.add("info-imc");
-    imcTd.textContent = paciente.imc;
+    //-- Melhor legibilidade
+    let pesoTd = montaTd(paciente.peso, "info-peso")
+    let alturaTd = montaTd(paciente.altura, "info-altura")
+    let gorduraTd = montaTd(paciente.gordura, "info-gordura")
+    let imcTd = montaTd(paciente.imc, "info-imc")
 
     // -- passando appendChild para definir filhos
     pacienteTr.appendChild(nomeTd);
@@ -71,4 +60,16 @@ function montaTr(paciente){
     pacienteTr.appendChild(imcTd);
 
     return pacienteTr;
+}
+
+//-- criando função para code clean e deixar o codigo mais legivel
+function montaTd (dado,classe){
+    //--criando objeto TD
+    let td =  document.createElement("td");
+    //-- recebendo valor do td
+    td.textContent = dado;
+    //-- recebendo nome da classe
+    td.classList.add(classe);
+
+    return montaTd;
 }
