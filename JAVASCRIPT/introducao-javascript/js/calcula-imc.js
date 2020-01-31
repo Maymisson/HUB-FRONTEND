@@ -65,8 +65,7 @@ for (var i = 0; i < pacientes.length; i++) {
 //}
 
 
-//-- criando funções 
-
+//-- criando funções para o calculo do IMC
 function calculaImc (peso,altura){
     let imc = 0;
     imc = peso / (altura * altura); 
