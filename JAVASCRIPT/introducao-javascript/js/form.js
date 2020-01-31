@@ -1,3 +1,5 @@
+//--------------------------------------- chamando funções -----------------------------------------//
+
 let botaoAdicionar = document.querySelector("#adicionar-paciente")
 // -- Função anonima 
 botaoAdicionar.addEventListener("click", function (event){
@@ -14,14 +16,16 @@ botaoAdicionar.addEventListener("click", function (event){
     let pacienteTr = montaTr(paciente);
     //console.log(pacienteTr);
 
-    // -- passando o elemento criado no JS para o HTML - tabela
+    // -- passando o elemento criado no JS para o HTML - adicionado paciente na tabela
     let tabela = document.querySelector("#tabela-pacientes");
-    tabela.appendChild(pacienteTr); 
-});
-    //console.log(paciente); //tr
-    //console.log(tdPeso);  //td que tem o peso
-    //console.log(peso);  // obter 0 valor
+    tabela.appendChild(pacienteTr);
+    //-- limpando formulario ao add um paciente
+    form.reset();
 
+});
+//---------------------------------------------------------------------------------------------------//
+
+//----------------------------------- criando funções e objetos -------------------------------------//
 
 //-- refatorando o codigo em funções e criando objetos
 function obtemPacienteDoFormulario(form){
@@ -68,3 +72,5 @@ function montaTd (dado, classe){
 
     return td;
 }
+
+//------------------------------------------------------------------------------------------------------//
