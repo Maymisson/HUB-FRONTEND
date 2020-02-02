@@ -99,6 +99,11 @@ function montaTd (dado, classe){
 function validaPaciente(paciente){
     //-- Retornando array e usando o push para adicionar a string dentro da array
     let erros = [];
+
+    if (paciente.nome.length <= 2){
+        erros.push("Nome do Paciente não pode ser em branco !")
+    }
+
     if (!validaPeso(paciente.peso)){
         erros.push("Peso Inválido !");
     }
@@ -106,6 +111,18 @@ function validaPaciente(paciente){
     if (!validaAltura(paciente.altura)){
         erros.push("Altura Inválida !");
     }
+
+    if (paciente.gordura.length <= 1){
+        erros.push("% de Gordura Inválida !");
+    }
+
+    if (paciente.peso.length == 0){
+        erros.push("O Peso não pode ser em branco !");
+    }
+    if(paciente.altura.length == 0){
+        erros.push("A Altura não pode ser em branco !");
+    }
+
     return erros;
 }
 //------------------------------------------------------------------------------------------------------//
