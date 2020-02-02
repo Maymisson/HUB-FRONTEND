@@ -30,6 +30,9 @@ botaoAdicionar.addEventListener("click", function (event){
     tabela.appendChild(pacienteTr);
     //-- limpando formulario ao add um paciente
     form.reset();
+    //-- limpando mensagens de validação após inserção bem sucedida 
+    let mensagensErro = document.querySelector("#mensagem-erro");
+    mensagensErro.innerHTML = "";
 
 });
 //---------------------------------------------------------------------------------------------------//
@@ -37,6 +40,9 @@ botaoAdicionar.addEventListener("click", function (event){
 //--------------------- criando função para exibição de erro usando forEach -------------------------//
 function exibeMensagemErro (erros){
     let ul = document.querySelector("#mensagem-erro");
+    //-- limpando mensagem de validação ao tentar nova inserção
+    ul.innerHTML = "";
+
     erros.forEach(function (erro) {
         let li = document.createElement("li");
         li.textContent = erro;
