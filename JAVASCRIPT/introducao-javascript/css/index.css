@@ -142,3 +142,7 @@ button[disabled=disabled], button:disabled {
 .titulo{
 	font: bold;
 }
+
+#mensagem-erro{
+	color: red;
+}

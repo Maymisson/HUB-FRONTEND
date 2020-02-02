@@ -16,6 +16,16 @@ botaoAdicionar.addEventListener("click", function (event){
     let pacienteTr = montaTr(paciente);
     //console.log(pacienteTr);
 
+    //-- Varável para receber a mensagem de erro
+    let erro = validaPaciente(paciente);
+
+    //-- Chamando função de validação do paciente e realizando teste para validar
+    if (erro.length > 0) {
+        let mensagemErro = document.querySelector("#mensagem-erro");
+        mensagemErro.textContent = erro; //-- exibe a msg da função
+        return; //-- Sai imediatamente da função
+    }
+
     // -- passando o elemento criado no JS para o HTML - adicionado paciente na tabela
     let tabela = document.querySelector("#tabela-pacientes");
     tabela.appendChild(pacienteTr);
@@ -73,4 +83,14 @@ function montaTd (dado, classe){
     return td;
 }
 
+//------------------------------------------------------------------------------------------------------//
+
+//-- Criando função para validação no Form e reaproveitando Funções ------------------------------------//
+function validaPaciente(paciente){
+    if (validaPeso(paciente.peso)){
+        return "";
+    } else {
+        return "Peso Inválido !";
+    }
+}
 //------------------------------------------------------------------------------------------------------//
