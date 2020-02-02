@@ -87,10 +87,14 @@ function montaTd (dado, classe){
 
 //-- Criando função para validação no Form e reaproveitando Funções ------------------------------------//
 function validaPaciente(paciente){
-    if (validaPeso(paciente.peso)){
-        return "";
-    } else {
-        return "Peso Inválido !";
+
+    let erros = [];
+    if (!validaPeso(paciente.peso)){
+        erros.push("Peso Inválido !");
+    }
+
+    if (!validaAltura(paciente.altura)){
+        erros.push("Altura Inválida !");
     }
 }
 //------------------------------------------------------------------------------------------------------//
