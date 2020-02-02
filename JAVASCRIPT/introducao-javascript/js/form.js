@@ -17,12 +17,11 @@ botaoAdicionar.addEventListener("click", function (event){
     //console.log(pacienteTr);
 
     //-- Varável para receber a mensagem de erro
-    let erro = validaPaciente(paciente);
-
+    let erros = validaPaciente(paciente);
+    console.log(erros);
     //-- Chamando função de validação do paciente e realizando teste para validar
-    if (erro.length > 0) {
-        let mensagemErro = document.querySelector("#mensagem-erro");
-        mensagemErro.textContent = erro; //-- exibe a msg da função
+    if (erros.length > 0) {
+        exibeMensagemErro(erros);
         return; //-- Sai imediatamente da função
     }
 
@@ -34,6 +33,17 @@ botaoAdicionar.addEventListener("click", function (event){
 
 });
 //---------------------------------------------------------------------------------------------------//
+
+//--------------------- criando função para exibição de erro usando forEach -------------------------//
+function exibeMensagemErro (erros){
+    let ul = document.querySelector("#mensagem-erro");
+    erros.forEach(function (erro) {
+        let li = document.createElement("li");
+        li.textContent = erro;
+        ul.appendChild(li);
+    });
+}
+//----------------------------------- criando funções e objetos -------------------------------------//
 
 //----------------------------------- criando funções e objetos -------------------------------------//
 
@@ -87,7 +97,7 @@ function montaTd (dado, classe){
 
 //-- Criando função para validação no Form e reaproveitando Funções ------------------------------------//
 function validaPaciente(paciente){
-
+    //-- Retornando array e usando o push para adicionar a string dentro da array
     let erros = [];
     if (!validaPeso(paciente.peso)){
         erros.push("Peso Inválido !");
@@ -96,5 +106,6 @@ function validaPaciente(paciente){
     if (!validaAltura(paciente.altura)){
         erros.push("Altura Inválida !");
     }
+    return erros;
 }
 //------------------------------------------------------------------------------------------------------//
