@@ -18,13 +18,15 @@ for (let i = 0; i < pacientes.length; i++) {
 
     let tdImc = paciente.querySelector(".info-imc");
 
-    // - criando variaveis booleanas para utilizar na estrutura de condição
-    let pesoValidado = true;
-    let alturaValidado = true;
+    // - criando variaveis booleanas para utilizar na estrutura de condição--------------------------------------//
+    let pesoValidado = validaPeso(peso); //-- retorna se o peso é valido ou não 
+    let alturaValidado = validaAltura(altura); //-- retorna se a altura é valida ou não
+    //-----------------------------------------------------------------------------------------------------------//
 
-    //-- Estrutura de condição e operadores logicos ------------------------------------------------------------//
 
-    if (peso <= 0 || peso > 300) {
+    //-- Estrutura de condição e operadores logicos -------------------------------------------------------------//
+
+    if (!pesoValidado) {
         console.log("Peso inválido"); 
         pesoValidado = false;
         tdImc.textContent = "Peso inválido!"; //-- mensagem individual para peso inválido
@@ -33,7 +35,7 @@ for (let i = 0; i < pacientes.length; i++) {
         paciente.classList.add("paciente-invalido");
     }
 
-    if (altura <= 0 || altura > 3) {
+    if (!alturaValidado) {
         //console.log("Altura inválida");
         alturaValidado = false;
         tdImc.textContent = "Altura inválida!"; //-- mensagem individual para altura inválido
@@ -50,6 +52,24 @@ for (let i = 0; i < pacientes.length; i++) {
         //tdImc.textContent = "Peso e/ou altura inválidos!"; //-- mensagem para generalizar quando uma das condições forem invalidas
         //paciente.style.backgroundColor = "lightcoral";
     //}
+}
+//--------------------------------------------------------------------------------------------------------------------------------//
+
+//-- Função para validação de Peso e altura --------------------------------------------------------------------------------------//
+function validaPeso(peso){
+    if (peso >= 0 && peso < 1000){
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validaAltura(altura){
+    if (altura >= 0 && altura <= 3.0){
+        return true;
+    } else {
+        return false;
+    }
 }
 //--------------------------------------------------------------------------------------------------------------------------------//
 
