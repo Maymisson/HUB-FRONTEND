@@ -11,9 +11,12 @@ campoFiltro.addEventListener("input", function(){
             let paciente = pacientes[i];
             let tdNome = paciente.querySelector(".info-nome");
             let nome = tdNome.textContent;
+            
+            //-- Criando expressão regular para o filtro
+            let expressao = RegExp(this.value,"i");
     
             //-- Implementando lógica de filtragem
-            if(nome != this.value){
+            if(!expressao.test(nome)){
                 paciente.classList.add("invisivel")
             }else {
                 paciente.classList.remove("invisivel");
