@@ -5,9 +5,16 @@ campoFiltro.addEventListener("input", function(){
     //-- comparando os nomes da tabela
     let pacientes = document.querySelectorAll(".paciente");
     //-- Condição de busca
-    for(let i = 0; i < paciente.length; i++){
+    for (let i = 0; i < pacientes.length; i++) {
         let paciente = pacientes[i];
         let tdNome = paciente.querySelector(".info-nome");
-        let nome = paciente.textContent;
+        let nome = tdNome.textContent;
+
+        //-- Implementando lógica de filtragem
+        if(nome != this.value){
+            paciente.classList.add("invisivel")
+        }else {
+            paciente.classList.remove("invisivel");
+        }
     }
 });
